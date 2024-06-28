@@ -1,0 +1,14 @@
+{
+  "name": "03-spy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./index.test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sinon": "^18.0.0"
+  }
+}
