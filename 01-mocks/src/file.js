@@ -2,7 +2,7 @@ const { readFile } = require("fs/promises");
 
 const RULES = {
   MAX_LINES: 3,
-  FILDS: ["id", "name", "profession", "age"],
+  FIELDS: ["id", "name", "profession", "age"],
 };
 
 class File {
@@ -21,7 +21,7 @@ class File {
   static isValid(csvString, options = RULES) {
     const [header, ...fileWithoutHeader] = csvString.split("\n");
 
-    const isHeaderValid = header === options.FILDS.join(",");
+    const isHeaderValid = header === options.FIELDS.join(",");
     if (isHeaderValid === false) {
       return {
         valid: false,
